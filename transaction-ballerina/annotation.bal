@@ -23,9 +23,17 @@ public type TransactionParticipantConfig record {|
     function (string) onabort?;
 |};
 
+# This record defines the fields of the @hello:Greeting annotation. 
+#
+# + salutation - The greeting message
+public type ExcludeCoverageConfig record {|
+|};
+
+
 /////////////////////////////////////////
 /// Function and Resource Annotations ///
 /////////////////////////////////////////
 
 # The annotation which is used to configure local transaction participant function.
 public annotation TransactionParticipantConfig Participant on function;
+public annotation ExcludeCoverageConfig ExcludeCoverageFromGeneratedReport on function;
