@@ -144,7 +144,7 @@ function isValidCoordinationType(string coordinationType) returns boolean {
     return false;
 }
 
-@ExcludeCoverageFromGeneratedReport{}
+@ExcludeCoverageFromGeneratedReport
 function protoName(UProtocol p) returns string {
     if (p is RemoteProtocol) {
         return p.name;
